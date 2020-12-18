@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url('sticky-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.notes{
+    width: 75%;
+    margin: 30px auto;
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(4px);
+    box-shadow: 10px 10px 50px 10px rgba(0,0,0,.5);
+}
+
+.add-note-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.add-note-button button{
+    width: 20%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: cyan;
+    font-size: 1.2rem;
+    padding: 10px;
+    box-shadow: 10px 10px 50px 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+
+.add-note-button button:hover{
+  transform: scale(1.2);
+}
+.add-note-button button i{
+    padding: 0 10px;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+}
+
+.notes-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+
+.note-text{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    box-shadow: 10px 10px 50px 10px rgba(0,0,0,.3);
+}
+.btn{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(75%);
+}
+.btn i{
+    color: rgba(0,0,0,0.5);
+    font-size: 1.6em;
+    padding: 2px;
+}
+.btn i:hover{
+    color: rgba(0,0,0,0.9);
+    cursor: pointer;
+}
+.new-notes{
+    display: flex;
+    justify-content:flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.new-note{
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+.new-note:hover{
+    transform: scale(1.1);
+}
+
+.new-note:focus{
+    cursor: text;
+}
+.pin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.pin img{
+    width: 100px;
+    height: 100%;
+}

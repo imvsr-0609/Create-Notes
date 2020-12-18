@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+    <script defer src="app.js"></script>
+    <title>Note it Down</title>
+</head>
+<body>
+
+    <div class="notes">
+        <div class="pin">
+            <img src="pin.jpg" alt="pin">
+        </div>
+        <div  class="add-note-button">
+            <button data-create-button><i class="fas fa-plus"></i>Create Note</button>
+        </div>
+
+        <div data-new-note-class class="notes-div">
+          <div class="btn">
+            <i data-check-icon class="far fa-check-circle fa-2x"></i>
+            <i data-cross-icon class="far fa-times-circle fa-2x"></i>
+          </div>
+            <form>
+                <textarea class="note-text" id="new-note-text" placeholder="Write Note..." maxlength="500" ></textarea>
+            </form> 
+        </div>
+
+        <div data-new-notes-container class="new-notes">
+        </div>
+    </div>
+    
+</body>
+</html>
